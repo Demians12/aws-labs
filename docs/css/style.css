@@ -334,10 +334,7 @@ body.dark .loader_line:after{
 	justify-content: space-between;
 }
 .edina_tm_mobile_menu .mobile_in .logo img{
-	display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+	max-width: 100px;
 }
 .my_trigger .hamburger-box{
 	display: block;

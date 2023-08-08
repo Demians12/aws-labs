@@ -334,7 +334,10 @@ body.dark .loader_line:after{
 	justify-content: space-between;
 }
 .edina_tm_mobile_menu .mobile_in .logo img{
-	max-width: 100px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 .my_trigger .hamburger-box{
 	display: block;
@@ -421,7 +424,10 @@ body.opened .edina_tm_sidebar{
 	padding: 40px;
 }
 .edina_tm_sidebar .logo img{
-	max-width: 120px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 .edina_tm_sidebar .menu{
 	width: 100%;

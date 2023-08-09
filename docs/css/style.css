@@ -937,23 +937,38 @@ body.opened .edina_tm_hero .extra{
 	font-weight: 800;
 	margin-bottom: 20px;
 }
-.edina_tm_title p{
+.edina_tm_title p {
 	max-width: 600px;
+	padding-top: 80px; /* Reduced padding for better alignment */
+	font-size: 28px; /* Increased font size */
+	color: #f1f1f1; /* Lighter color for contrast */
+	line-height: 1.5; /* Improved line height for readability */
+	font-weight: 600; /* Increased font weight */
+  }
+.edina_tm_services {
+	background: linear-gradient(60deg, #2f3640, #353b48, #3e4a63, #4a5a6e);
+	background-size: 200% 200%;
+	animation: ServicesGradient 60s ease infinite;
+	padding: 80px 100px; /* Adjusted padding for better spacing */
 }
-.edina_tm_services{
-	width: 100%;
-	height: auto;
-	clear: both;
-	float: left;
-	background-color: #F9F9FC;
-	padding: 100px 0px 50px 0px;
-}
+  
+  @keyframes ServicesGradient {
+	0% {
+	  background-position: 0% 50%;
+	}
+	50% {
+	  background-position: 100% 50%;
+	}
+	100% {
+	  background-position: 0% 50%;
+	}
+  }
 .edina_tm_services .service_list{
 	width: 100%;
 	height: auto;
 	clear: both;
 	float: left;
-	padding-top: 80px;
+	padding-top: 60px;
 }
 .edina_tm_services ul{
 	margin: 0px 0px 0px -30px;
@@ -967,25 +982,15 @@ body.opened .edina_tm_hero .extra{
 	padding-left: 30px;
 	float: left;
 }
-.edina_tm_services ul li .list_inner{
-	width: 100%;
-	height: 100%;
-	clear: both;
-	float: left;
-	position: relative;
-	background-color: #fff;
-	padding: 50px 100px 45px 50px;
-	border-radius: 6px;
-	
-	-webkit-transition: all .3s ease;
-	   -moz-transition: all .3s ease;
-	    -ms-transition: all .3s ease;
-	     -o-transition: all .3s ease;
-	        transition: all .3s ease;
+.edina_tm_services ul li .list_inner {
+	background-color: #f5f6fa; /* Lighter background for service boxes */
+	transition: all .3s ease;
 }
-.edina_tm_services ul li .list_inner:hover{
-	background-color: #000;
+
+.edina_tm_services ul li .list_inner:hover {
+	background-color: #2f3640; /* Darker color on hover */
 }
+
 .edina_tm_services ul li .svg{
 	width: 50px;
 	height: 50px;
@@ -997,85 +1002,41 @@ body.opened .edina_tm_hero .extra{
 	     -o-transition: all .3s ease;
 	        transition: all .3s ease;
 }
-.edina_tm_services ul li .list_inner:hover .svg{
-	color: #fff;
+
+.edina_tm_services ul li .list_inner:hover .svg,
+.edina_tm_services ul li .list_inner:hover h3,
+.edina_tm_services ul li .list_inner:hover .learn_more {
+color: #f1f1f1; /* White text on hover */
 }
+
 .edina_tm_services ul li .list_inner:hover .svg.custom{
 	stroke: #fff;
 }
-.edina_tm_services ul li h3{
-	font-weight: 600;
-	font-size: 26px;
+.edina_tm_services ul li h3 {
+	font-weight: 700; /* Bold font weight for headings */
+	font-size: 24px; /* Adjusted font size */
 	color: #1A1A1A;
-	margin-bottom: 20px;
+	margin-bottom: 15px; /* Reduced margin for better spacing */
 }
+
 .edina_tm_services ul li .list_inner:hover h3{
 	color: #fff;
 }
-.edina_tm_services ul li .learn_more{
+.edina_tm_services ul li .learn_more {
 	text-decoration: none;
 	color: #7E7E7E;
 	font-size: 18px;
+	font-weight: 600; /* Increased font weight for the link */
 	display: inline-block;
 	position: relative;
-	
-	-webkit-transition: all .3s ease;
-	   -moz-transition: all .3s ease;
-	    -ms-transition: all .3s ease;
-	     -o-transition: all .3s ease;
-	        transition: all .3s ease;
+  }
+.edina_tm_services .service_list
+.edina_tm_services ul li .list_inner:hover .learn_more span,
+.edina_tm_services ul li .list_inner:hover .learn_more span:before,
+.edina_tm_services ul li .list_inner:hover .learn_more span:after {
+  background-color: #f1f1f1; /* White arrow on hover */
 }
-.edina_tm_services ul li .learn_more span{
-	position: absolute;
-	display: inline-block;
-	width: 10px;
-	height: 2px;
-	background-color: #7E7E7E;
-	top: 50%;
-	transform: translateY(-50%);
-	margin-left: 14px;
-	border-radius: 50px;
-	
-	-webkit-transition: all .3s ease;
-	   -moz-transition: all .3s ease;
-	    -ms-transition: all .3s ease;
-	     -o-transition: all .3s ease;
-	        transition: all .3s ease;
-}
-.edina_tm_services ul li .learn_more span:before{
-	position: absolute;
-	content: "";
-	width: 6px;
-	height: 2px;
-	background-color: #7E7E7E;
-	transform: rotate(45deg);
-	right: 0px;
-	top: -2px;
-	border-radius: 50px;
-	
-	-webkit-transition: all .3s ease;
-	   -moz-transition: all .3s ease;
-	    -ms-transition: all .3s ease;
-	     -o-transition: all .3s ease;
-	        transition: all .3s ease;
-}
-.edina_tm_services ul li .learn_more span:after{
-	position: absolute;
-	content: "";
-	width: 6px;
-	height: 2px;
-	background-color: #7E7E7E;
-	transform: rotate(-45deg);
-	right: 0px;
-	bottom: -2px;
-	border-radius: 50px;
-	
-	-webkit-transition: all .3s ease;
-	   -moz-transition: all .3s ease;
-	    -ms-transition: all .3s ease;
-	     -o-transition: all .3s ease;
-	        transition: all .3s ease;
-}
+
 .edina_tm_services ul li .list_inner:hover .learn_more span{
 	width: 30px;
 	background-color: #fff;

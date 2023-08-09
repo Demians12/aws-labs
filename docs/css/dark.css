@@ -171,7 +171,45 @@ body.dark .progress_inner .label {
 }
 
 body.dark .edina_tm_services {
-  background-color: #25274d;
+  /*background-color: #25274d;*/
+  background-color: #010211; /* Light background to differentiate the section */
+  padding: 60px 0; /* Padding around the entire section */
+}
+
+.edina_tm_services .container {
+  max-width: 1100px; /* Container width */
+  margin: 0 auto; /* Centering the container */
+  padding: 0 15px; /* Padding for small screens */
+}
+
+.edina_tm_services .edina_tm_title {
+  text-align: center; /* Centering the title and paragraph */
+  margin-bottom: 40px; /* Space between title and content */
+}
+
+.edina_tm_services h3 {
+  font-size: 28px; /* Title font size */
+  color: #333; /* Title color */
+  margin-bottom: 15px; /* Space between title and paragraph */
+}
+
+.edina_tm_services .edina_tm_title h3 {
+  color: #b2edf1;
+}
+
+.edina_tm_services p {
+  font-size: 20px;
+  color: #dae0d3;
+  line-height: 1.6;
+  max-width: 800px; /* You can set a max-width to control the line length */
+  margin: 0 auto; /* This will center the paragraph if it's less wide than the container */
+}
+
+.edina_tm_services .highlight {
+  font-size: 23px; /* Increase the font size */
+  color: #f0eeb6; /* Change the color if needed */
+  font-weight: bold; /* Make it bold */
+  display: block; /* Make it a block element to occupy the full width */
 }
 
 body.dark .edina_tm_services ul li .list_inner {

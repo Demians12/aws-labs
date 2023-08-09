@@ -106,12 +106,28 @@ body.dark .edina_tm_mobile_menu .dropdown .dropdown_inner ul li a {
 }
 
 body.dark .edina_tm_hero {
-  background-color: #25274d;
+  background: linear-gradient(45deg, #25274d, #464866, #aa4b6b, #3b8d99);
+  background-size: 400% 400%;
+  animation: Gradient 15s ease infinite;
+}
+
+body.dark .edina_tm_hero .content .extra h3 {
+  color: #b2edf1;
+}
+
+body.dark .edina_tm_hero .content .extra p {
+  font-size: 20px;
 }
 
 body.dark .edina_tm_hero .image:before {
-  background: linear-gradient(45deg, #464866, #25274d);
-  border-radius: 15px;
+  background: linear-gradient(45deg, #464866, #25274d, #aa4b6b, #3b8d99);
+  background-size: 400% 400%;
+  animation: Gradient 15s ease infinite;
+  border-radius: 100%; /* Making it a circle */
+}
+
+body.dark .edina_tm_hero .image .main {
+  border-radius: 100%; /* Making the image itself a circle */
 }
 
 body.dark .edina_tm_hero .social ul li .svg {

@@ -217,8 +217,8 @@ body.dark .edina_tm_services {
   line-height: 1.5; /* Improved line height */
 }
 
-.edina_tm_services .highlight {
-  color: #ffffff;
+.edina_tm_services .edina_tm_title .highlight {
+  color: #fbfbfb;
 }
 
 body.dark .edina_tm_services ul li .list_inner {

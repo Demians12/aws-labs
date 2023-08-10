@@ -1180,6 +1180,424 @@ color: #f1f1f1; /* White text on hover */
     transition: background-color 0.3s ease, transform 0.3s ease;
     z-index: 111111;
 }
+
+.edina_tm_modalbox .close_button:before,
+.edina_tm_modalbox .close_button:after {
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 2px;
+    background-color: #333;
+}
+
+edina_tm_modalbox .close_button:before {
+    transform: rotate(45deg);
+}
+
+.edina_tm_modalbox .close_button:after {
+    transform: rotate(-45deg);
+}
+
+.edina_tm_modalbox .close_button:hover {
+    background-color: #333;
+}
+
+.edina_tm_modalbox .close_button:hover:before,
+.edina_tm_modalbox .close_button:hover:after {
+    background-color: #fff;
+}
+
+.edina_tm_modalbox .close_button:active {
+    transform: scale(0.95);
+}
+
+/*---------------------------------------------------*/
+/*	06) EDINA SERVICE
+/*---------------------------------------------------*/
+
+.edina_tm_title{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+}
+.edina_tm_title h3{
+	font-size: 60px;
+	font-weight: 800;
+	margin-bottom: 20px;
+}
+.edina_tm_title p {
+	max-width: 600px;
+	padding-top: 80px; /* Reduced padding for better alignment */
+	font-size: 28px; /* Increased font size */
+	color: #f1f1f1; /* Lighter color for contrast */
+	line-height: 1.5; /* Improved line height for readability */
+	font-weight: 600; /* Increased font weight */
+  }
+.edina_tm_services {
+	background: linear-gradient(60deg, #2f3640, #353b48, #3e4a63, #4a5a6e);
+	background-size: 200% 200%;
+	animation: ServicesGradient 60s ease infinite;
+	padding: 80px 100px; /* Adjusted padding for better spacing */
+}
+  
+  @keyframes ServicesGradient {
+	0% {
+	  background-position: 0% 50%;
+	}
+	50% {
+	  background-position: 100% 50%;
+	}
+	100% {
+	  background-position: 0% 50%;
+	}
+  }
+.edina_tm_services .service_list{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+	padding-top: 60px;
+}
+.edina_tm_services ul{
+	margin: 0px 0px 0px -30px;
+	list-style-type: none;
+	display: flex;
+	flex-wrap: wrap;
+}
+.edina_tm_services ul li{
+	margin: 0px 0px 30px 0px;
+	width:25%;
+	padding-left: 30px;
+	float: left;
+}
+.edina_tm_services ul li .list_inner {
+	background-color: #f5f6fa; /* Lighter background for service boxes */
+	transition: all .3s ease;
+}
+
+.edina_tm_services ul li .list_inner:hover {
+	background-color: #2f3640; /* Darker color on hover */
+}
+
+.edina_tm_services ul li .svg{
+	width: 50px;
+	height: 50px;
+	margin-bottom: 25px;
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+
+.edina_tm_services ul li .list_inner:hover .svg,
+.edina_tm_services ul li .list_inner:hover h3,
+.edina_tm_services ul li .list_inner:hover .learn_more {
+color: #f1f1f1; /* White text on hover */
+}
+
+.edina_tm_services ul li .list_inner:hover .svg.custom{
+	stroke: #fff;
+}
+.edina_tm_services ul li h3 {
+	font-weight: 700; /* Bold font weight for headings */
+	font-size: 24px; /* Adjusted font size */
+	color: #1A1A1A;
+	margin-bottom: 15px; /* Reduced margin for better spacing */
+}
+
+.edina_tm_services ul li .list_inner:hover h3{
+	color: #fff;
+}
+.edina_tm_services ul li .learn_more {
+	text-decoration: none;
+	color: #7E7E7E;
+	font-size: 18px;
+	font-weight: 600; /* Increased font weight for the link */
+	display: inline-block;
+	position: relative;
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+  }
+
+.edina_tm_services ul li .learn_more span{
+	position: absolute;
+	display: inline-block;
+	width: 10px;
+	height: 2px;
+	top: 50%;
+	transform: translateY(-50%);
+	margin-left: 14px;
+	border-radius: 50px;
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+
+.edina_tm_services ul li .learn_more span:before{
+	position: absolute;
+	content: "";
+	width: 6px;
+	height: 2px;
+	transform: rotate(45deg);
+	right: 0px;
+	top: -2px;
+	border-radius: 50px;
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+
+.edina_tm_services ul li .learn_more span:after{
+	position: absolute;
+	content: "";
+	width: 6px;
+	height: 2px;
+	transform: rotate(-45deg);
+	right: 0px;
+	bottom: -2px;
+	border-radius: 50px;
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+
+.edina_tm_services ul li .list_inner:hover .learn_more span{
+	width: 30px;
+	background-color: #fff;
+}
+
+.edina_tm_services .service_list
+.edina_tm_services ul li .list_inner:hover .learn_more span,
+.edina_tm_services ul li .list_inner:hover .learn_more span:before,
+.edina_tm_services ul li .list_inner:hover .learn_more span:after {
+  background-color: #f1f1f1; /* White arrow on hover */
+}
+
+.edina_tm_services ul li .list_inner:hover .learn_more span{
+	width: 30px;
+	background-color: #fff;
+}
+.edina_tm_services ul li .list_inner:hover .learn_more{
+	color : #fff;
+}
+.edina_tm_full_link{
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	z-index: 5;
+}
+.edina_tm_modalbox{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	height: 100vh;
+	z-index: 15;
+	background-color: rgba(0,0,0,.8);
+	opacity: 0;
+	visibility: hidden;
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+.edina_tm_modalbox.opened{
+	opacity: 1;
+	visibility: visible;
+}
+
+.edina_tm_modalbox .container{
+	height: 100vh;
+}
+.edina_tm_modalbox .box_inner{
+	position: absolute;
+	top: 70px;
+	bottom: 70px;
+	width: 968px;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: #fff;
+	z-index: 1;
+	opacity: 0;
+	visibility: hidden;
+	margin-top: -20px;
+	transition-delay: .3s;
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+.edina_tm_modalbox.opened .box_inner{
+	opacity: 1;
+	visibility: visible;
+	margin-top: 0px;
+}
+.edina_tm_modalbox .close{
+	position: fixed;
+	left: 100%;
+	top: 0px;
+	margin-left: 40px;
+	z-index: 111111;
+}
+.edina_tm_modalbox .close a{
+	text-decoration: none;
+	color: #fff;
+}
+.edina_tm_modalbox .close .svg{
+	width: 50px;
+	height: 50px;
+}
+
+.edina_tm_modalbox .description_wrap{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	float: left;
+	overflow: hidden;
+	padding: 50px;
+	overflow-y: scroll;
+}
+.edina_tm_services .popup_informations{
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+	z-index: -11;
+	display: none;
+}
+.edina_tm_modalbox .service_title{
+	display: none;
+}
+.edina_tm_modalbox .description_wrap .svg{
+	display: none;
+}
+.edina_tm_modalbox .description_wrap .learn_more{
+	display: none;
+}
+.edina_tm_modalbox .description_wrap .edina_tm_full_link{
+	display: none;
+}
+.edina_tm_modalbox .popup_informations{
+	width: 100%;
+	height: auto;
+	clear: both;
+	float: left;
+}
+.edina_tm_modalbox .popup_informations .image{
+	position: relative;
+	max-height: 450px;
+	margin-bottom: 50px;
+	overflow: hidden;
+}
+.edina_tm_modalbox .popup_informations .image img{
+	position: relative;
+	min-width: 100%;
+	opacity: 0;
+}
+.edina_tm_modalbox .popup_informations .image .main{
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.edina_tm_modalbox .popup_informations h3{
+	color: #0F172A;
+	font-size: 23px;
+	font-weight: 700;
+	margin-bottom: 30px;
+}
+.edina_tm_modalbox .popup_informations p{
+	margin-bottom: 30px;
+}
+.edina_tm_modalbox .in_list{
+	width: 100%;
+	float: left;
+	margin-bottom: 30px;
+	padding-left: 20px;
+}
+.edina_tm_modalbox .in_list ul{
+	margin: 0px;
+	list-style-type: none;
+}
+.edina_tm_modalbox .in_list ul li{
+	margin: 0px 0px 15px 0px;
+	width: 100%;
+	float: left;
+	position: relative;
+	padding-left: 20px;
+}
+.edina_tm_modalbox .in_list ul li:before{
+	position: absolute;
+	content: "";
+	width: 5px;
+	height: 5px;
+	border-radius: 100%;
+	background-color: #7e7e7e;
+	left: 0px;
+	top: 13px;
+}
+.edina_tm_modalbox .in_list ul li:last-child{
+	margin-bottom: 0px;
+}
+.edina_tm_modalbox .in_list ul li p{
+	margin-bottom: 0px;
+}
+
+.edina_tm_modalbox .close:before,
+.edina_tm_modalbox .close:after {
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 2px;
+    background-color: #2f3640; /* Matching the gradient color */
+}
+
+.edina_tm_modalbox .close:before {
+    transform: rotate(45deg);
+}
+
+.edina_tm_modalbox .close:after {
+    transform: rotate(-45deg);
+}
+
+.edina_tm_modalbox .close:hover {
+    background-color: #2f3640; /* Darker color on hover */
+    border-color: #f5f6fa; /* Inverted color on hover */
+}
+
+.edina_tm_modalbox .close:hover:before,
+.edina_tm_modalbox .close:hover:after {
+    background-color: #f5f6fa; /* Inverted color on hover */
+}
+
+.edina_tm_modalbox .close:active {
+    transform: scale(0.95);
+}
+
 .edina_tm_modalbox .close a{
 	text-decoration: none;
 	color: #fff;

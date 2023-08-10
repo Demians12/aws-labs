@@ -1029,7 +1029,69 @@ color: #f1f1f1; /* White text on hover */
 	font-weight: 600; /* Increased font weight for the link */
 	display: inline-block;
 	position: relative;
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
   }
+
+.edina_tm_services ul li .learn_more span{
+	position: absolute;
+	display: inline-block;
+	width: 10px;
+	height: 2px;
+	top: 50%;
+	transform: translateY(-50%);
+	margin-left: 14px;
+	border-radius: 50px;
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+
+.edina_tm_services ul li .learn_more span:before{
+	position: absolute;
+	content: "";
+	width: 6px;
+	height: 2px;
+	transform: rotate(45deg);
+	right: 0px;
+	top: -2px;
+	border-radius: 50px;
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+
+.edina_tm_services ul li .learn_more span:after{
+	position: absolute;
+	content: "";
+	width: 6px;
+	height: 2px;
+	transform: rotate(-45deg);
+	right: 0px;
+	bottom: -2px;
+	border-radius: 50px;
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+
+.edina_tm_services ul li .list_inner:hover .learn_more span{
+	width: 30px;
+	background-color: #fff;
+}
+
 .edina_tm_services .service_list
 .edina_tm_services ul li .list_inner:hover .learn_more span,
 .edina_tm_services ul li .list_inner:hover .learn_more span:before,
@@ -1040,10 +1102,6 @@ color: #f1f1f1; /* White text on hover */
 .edina_tm_services ul li .list_inner:hover .learn_more span{
 	width: 30px;
 	background-color: #fff;
-}
-.edina_tm_services ul li .list_inner:hover .learn_more span:before,
-.edina_tm_services ul li .list_inner:hover .learn_more span:after{
-	background-color : #fff;
 }
 .edina_tm_services ul li .list_inner:hover .learn_more{
 	color : #fff;
@@ -1077,6 +1135,7 @@ color: #f1f1f1; /* White text on hover */
 	opacity: 1;
 	visibility: visible;
 }
+
 .edina_tm_modalbox .container{
 	height: 100vh;
 }

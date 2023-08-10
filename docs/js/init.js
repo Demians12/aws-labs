@@ -313,7 +313,7 @@ function edina_tm_modalbox(){
 	list.each(function(){
 		var element 	= jQuery(this);
 		var details 	= element.find('.list_inner').html();
-		var buttons 	= element.find('.edina_tm_full_link');
+		var buttons 	= element.find('.learn_more');
 		var mainImage	= element.find('.main');
 		var imgData		= mainImage.data('img-url');
 		buttons.on('click',function(){
